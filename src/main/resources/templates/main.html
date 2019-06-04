@@ -9,15 +9,43 @@
 </head>
 <body>
 <div class="panel panel-default">
-    <div class="panel-heading">了解</div>
-    <div style="padding: 10px 0 20px 10px;">
-        <h3>&nbsp;&nbsp;&nbsp;项目介绍</h3>
-        <ul>
-            <li>以实现业务为导向.</li>
-        </ul>
+    <section class="header15 cid-rsovs4wjuQ mbr-fullscreen mbr-parallax-background" id="header15-0">
 
 
-    </div>
+
+        <div class="mbr-overlay" style="opacity: 0.5; background-color: rgb(7, 59, 76);"></div>
+
+        <div class="container align-right">
+            <div class="row">
+                <div class="mbr-white col-lg-8 col-md-7 content-container">
+                    <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">订单状态查询</h1>
+
+                </div>
+                <div class="col-lg-4 col-md-5">
+                    <div class="form-container">
+                        <div class="media-container-column" data-form-type="formoid">
+                            <!---Formbuilder Form--->
+                            <form class="form-horizontal m-t" id="signupForm">
+                                <div class="dragArea row">
+                                    <div class="col-md-12 form-group " data-for="name">
+                                        <input type="text"  placeholder="配送标识"  required="required" class="form-control" id="psbs">
+                                    </div>
+                                    <div class="col-md-12 form-group " data-for="email">
+                                        <input type="text"  placeholder="美团内部单号"  required="required" class="form-control" id="mtnbdh">
+                                    </div>
+                                    <div class="col-md-12 input-group-btn"><button type="submit" class="btn btn-secondary">查询</button></div>
+                                </div>
+                            </form><!---Formbuilder Form--->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
 </div>
+<div th:include="include::footer"></div>
+<script src="/js/appjs/meituan/query.js"></script>
 </body>
 </html>
